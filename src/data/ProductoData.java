@@ -31,14 +31,15 @@ public class ProductoData {
     public static int create(Producto d) {
         int rsId = 0;
         String[] returns = {"id"};
-        String sql = "INSERT INTO producto(nombres, cod, precio, fecha_ven) "
-                + "VALUES(?,?,?,?)";
+        String sql = "INSERT INTO producto(nombres, cod, precio, data_created, fecha_ven) "
+                + "VALUES(?,?,?,?,?)";
         int i = 0;
         try {
             ps = cn.prepareStatement(sql, returns);
             ps.setString(++i, d.getNombres());
             ps.setString(++i, d.getCod());
             ps.setDouble(++i, d.getPrecio());
+            ps.getString(++i, d.setDate_created());
             ps.setString(++i, sdf.format(d.getFecha_ven()));
             rsId = ps.executeUpdate();// 0 no o 1 si commit
             try (ResultSet rs = ps.getGeneratedKeys()) {
@@ -62,6 +63,7 @@ public class ProductoData {
                 + "nombres=?, "
                 + "cod=?, "
                 + "precio=?, "
+                + "data_created=?, "
                 + "fecha_ven=? "
                 + "WHERE id=?";
         int i = 0;
@@ -70,6 +72,7 @@ public class ProductoData {
             ps.setString(++i, d.getNombres());
             ps.setString(++i, d.getCod());
             ps.setDouble(++i, d.getPrecio());
+            ps.setString(++i, sdf.format(d.getDate_created()));
             ps.setString(++i, sdf.format(d.getFecha_ven()));
 
             ps.setInt(++i, d.getId());
@@ -124,6 +127,7 @@ public class ProductoData {
                 d.setCod(rs.getString("cod"));
                 d.setPrecio(rs.getDouble("precio"));
 
+                String data = rs.getString("data_created");
                 String fecha = rs.getString("fecha_ven");
                 try {
                     Date date = sdf.parse(fecha);
@@ -158,6 +162,7 @@ public class ProductoData {
                 d.setCod(rs.getString("cod"));
                 d.setPrecio(rs.getDouble("precio"));
 
+                String data = rs.getString("data_created");
                 String fecha = rs.getString("fecha_ven");
                 try {
                     Date date = sdf.parse(fecha);

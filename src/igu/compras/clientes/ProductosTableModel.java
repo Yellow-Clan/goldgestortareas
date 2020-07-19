@@ -16,7 +16,7 @@ import util.Config;
 public class ProductosTableModel extends AbstractTableModel {
 
     private List<Producto> lis = new ArrayList();
-    private String[] columns = {"#", "Nombres", "Cod", "Precio", "Fecha ven"};
+    private String[] columns = {"#", "Nombres", "Cod", "Precio","Data_created", "Fecha ven"};
     private Class[] columnsType = {Integer.class, String.class, String.class, Double.class, String.class};// Date.class
     
     SimpleDateFormat iguSDF = new SimpleDateFormat(Config.DEFAULT_DATE_STRING_FORMAT_PE);
@@ -43,6 +43,8 @@ public class ProductosTableModel extends AbstractTableModel {
             case 3:
                 return d.getPrecio();
             case 4:
+                return d.getDate_created();
+            case 5:
                 return iguSDF.format(d.getFecha_ven()); //return (d.getFecha_ven(); 
             default:
                 return null;
