@@ -62,7 +62,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="clientesButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="clientesButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="Usuario" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="393" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -74,7 +74,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="clientesButton" alignment="3" max="32767" attributes="0"/>
                           <Component id="comprasButton" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                          <Component id="clientesButton1" alignment="3" pref="41" max="32767" attributes="0"/>
+                          <Component id="Usuario" alignment="3" pref="49" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -155,7 +155,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comprasButtonActionPerformed"/>
               </Events>
             </Component>
-            <Component class="igu.util.buttons.TheButton" name="clientesButton1">
+            <Component class="igu.util.buttons.TheButton" name="Usuario">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f4" green="ee" red="ef" type="rgb"/>
@@ -164,9 +164,9 @@
                   <Color blue="83" green="80" red="80" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/igu/imgs/icons/feeedback.png"/>
+                  <Image iconType="3" name="/igu/imgs/icons/user_blue_32.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="CLIENTES"/>
+                <Property name="text" type="java.lang.String" value="Usuario"/>
                 <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
@@ -188,8 +188,8 @@
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="clientesButton1MousePressed"/>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clientesButton1ActionPerformed"/>
+                <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="UsuarioMousePressed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UsuarioActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
