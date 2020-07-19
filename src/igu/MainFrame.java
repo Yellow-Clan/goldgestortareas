@@ -43,7 +43,7 @@ public class MainFrame extends javax.swing.JFrame {
         theButton3.setBackground(new java.awt.Color(239, 238, 244));
         theButton3.setForeground(new java.awt.Color(128, 128, 131));
         theButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/igu/imgs/icons/collection.png"))); // NOI18N
-        theButton3.setText("VENTAS");
+        theButton3.setText("NO REALIZADO");
         theButton3.setColorHover(new java.awt.Color(204, 204, 204));
         theButton3.setColorNormal(new java.awt.Color(239, 238, 244));
         theButton3.setColorPressed(new java.awt.Color(204, 204, 204));
@@ -57,10 +57,9 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        theButton2.setBackground(new java.awt.Color(239, 238, 244));
         theButton2.setForeground(new java.awt.Color(128, 128, 131));
         theButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/igu/imgs/icons/market.png"))); // NOI18N
-        theButton2.setText("COMPRAS");
+        theButton2.setText("TAREAS");
         theButton2.setColorHover(new java.awt.Color(204, 204, 204));
         theButton2.setColorNormal(new java.awt.Color(204, 204, 204));
         theButton2.setColorPressed(new java.awt.Color(204, 204, 204));

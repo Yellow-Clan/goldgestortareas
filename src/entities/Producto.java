@@ -9,8 +9,8 @@ import java.util.Date;
 public class Producto {
 
     private int id;
-    private String nombres;
-    private String cod;
+    private String descripcion;
+    private String prioridad;
     private double precio;
     private Date fecha_ven;
     private Date date_created; // manejado x bd
@@ -23,20 +23,20 @@ public class Producto {
         this.id = id;
     }
 
-    public String getNombres() {
-        return nombres;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
-    public String getCod() {
-        return cod;
+    public String getPrioridad() {
+        return prioridad;
     }
 
-    public void setCod(String cod) {
-        this.cod = cod;
+    public void setPrioridad(String prioridad) {
+        this.prioridad = prioridad;
     }
 
     public double getPrecio() {

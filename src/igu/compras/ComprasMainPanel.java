@@ -46,7 +46,7 @@ public class ComprasMainPanel extends javax.swing.JPanel {
         clientesButton.setBackground(new java.awt.Color(239, 238, 244));
         clientesButton.setForeground(new java.awt.Color(128, 128, 131));
         clientesButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/igu/imgs/icons/feeedback.png"))); // NOI18N
-        clientesButton.setText("CLIENTES");
+        clientesButton.setText("Lista de Tareas");
         clientesButton.setColorHover(new java.awt.Color(204, 204, 204));
         clientesButton.setColorNormal(new java.awt.Color(239, 238, 244));
         clientesButton.setColorPressed(new java.awt.Color(204, 204, 204));
@@ -117,10 +117,10 @@ public class ComprasMainPanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(comprasButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(clientesButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(clientesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(clientesButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(393, Short.MAX_VALUE))
+                .addContainerGap(357, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
