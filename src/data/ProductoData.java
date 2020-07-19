@@ -31,14 +31,14 @@ public class ProductoData {
     public static int create(Producto d) {
         int rsId = 0;
         String[] returns = {"id"};
-        String sql = "INSERT INTO producto(nombres, cod, precio, fecha_ven) "
-                + "VALUES(?,?,?,?)";
+        String sql = "INSERT INTO producto(nombres, cod,fecha_ven) "
+                + "VALUES(?,?,?)";
         int i = 0;
         try {
             ps = cn.prepareStatement(sql, returns);
             ps.setString(++i, d.getNombres());
             ps.setString(++i, d.getCod());
-            ps.setDouble(++i, d.getPrecio());
+            //ps.setDouble(++i, d.getPrecio());
             ps.setString(++i, sdf.format(d.getFecha_ven()));
             rsId = ps.executeUpdate();// 0 no o 1 si commit
             try (ResultSet rs = ps.getGeneratedKeys()) {
@@ -122,7 +122,7 @@ public class ProductoData {
                 d.setId(rs.getInt("id"));
                 d.setNombres(rs.getString("nombres"));
                 d.setCod(rs.getString("cod"));
-                d.setPrecio(rs.getDouble("precio"));
+                //d.setPrecio(rs.getDouble("precio"));
                 String fecha = rs.getString("fecha_ven");
                 try {
                     Date date = sdf.parse(fecha);
